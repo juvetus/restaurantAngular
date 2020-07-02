@@ -1,0 +1,12 @@
+
+.card .card-image .card-title {
+    color: rgb(228, 13, 13);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    max-width: 100%;
+    padding: 24px;
+    text-decoration-color: blue;
+    font-size: larger;
+   font-family: sans-serif;
+}

@@ -1,0 +1,38 @@
+<br>
+<!--Carousel-->
+<div class="row center" >
+     <img src="../assets/images/car3.png" width="1050" height="200">
+</div>
+
+<!--Body-->
+<h1 class="center">Nos Menus</h1>
+<div class='container'>
+<div class="row">
+<div *ngFor='let menu of menus' class="col s6 col sn6">
+  <div class="card horizontal">
+    <div class="card-image">
+      <img [src]="menu.photo">
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <p>{{ menu.name }}</p>
+      
+       <p><small>{{ "Menu :" + menu.types }}</small></p>
+       <p><small>{{ "Entrés :" + menu.entree }}</small></p>
+       <p><small>{{ "Plat :" + menu.plat }}</small></p>
+       <p><small>{{ "Dessert :" + menu.dessert }}</small></p>
+        <p><small>{{ "Prix :" + menu.prix + "$" }}</small></p>
+        <p><small>{{ myDate | date :'medium' }}</small></p>
+        <button class="btn btn-success">
+          <a href="reservation" class="">Commander</a>
+        </button>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div> 
+</div>

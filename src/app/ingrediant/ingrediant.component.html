@@ -1,0 +1,31 @@
+<br>
+<div class="row center" >
+     <img src="../assets/images/Doranco1.png" width="1050" height="200">
+</div>
+
+<!--Body-->
+<h1 class="center">Recettes & Ingredients</h1>
+<div class='container'>
+    <div class="row">
+    <div *ngFor='let ingrediant of ingrediants' class="col s6 col n4">
+      <div class="card horizontal" >
+        <div class="card-image">
+          <img [src]="ingrediant.urlPhoto">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ ingrediant.libelle }}</p>
+          
+           <p><small>{{ "Menu :" + ingrediant.description }}</small></p>
+           <p><small>{{ "Entrés :" + ingrediant.sauce }}</small></p>
+           <p><small>{{ "Plat :" + ingrediant.preparation }}</small></p>
+           <p><small>{{ "Dessert :" + ingrediant.type }}</small></p>
+            <p><small>{{ "Prix :" + ingrediant.price + "€" }}</small></p>
+          
+         <a class="btn btn-primary" (click)="navigateToDetails(ingrediant)">Détails</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
